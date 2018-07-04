@@ -1,0 +1,32 @@
+
+.box{
+	background: #bb8a4f;
+	width: 800px;
+	height: 1000px;
+	margin: 0 auto;
+}
+
+.header{
+	background: grey;
+	height: 250px;
+	margin: 0 auto;
+}
+.image{
+	float:left;
+}
+h1{
+	color:white;
+	float: left;
+	text-align: center;
+	padding-left: 10px;
+	font-size: 6em;
+}
+
+.main{
+	padding-left: 5px;
+}
+#glueResult, #waterResult, #glueResultAdd, #waterResultAdd{
+	width: 300px;
+	height: 30px;
+	background-color: white;
+}

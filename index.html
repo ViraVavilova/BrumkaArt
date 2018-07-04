@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>BrumkaArt</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src ="script/js.js"></script>
+</head>
+<body>
+	<div class="box">
+	<!--HEADER-->
+		<div class="header">
+			<div class="image">
+				<img src="images/logo.jpg">
+			</div>
+			<h1>BrumkaArt</h1>
+		</div>
+	<!--MAIN-->
+		<div class="main">
+			<div><p> <strong>Варіант 1. </strong></p>
+				<form action="">
+					<label>Скільки розчину потрібно?</label>
+					<input type="number" name="solvent" id = "solvent" placeholder="Розчин, л">
+					<br>
+					<label>Яка концентрація розчину?</label>
+					<input type="number" name="concentration" id = "concentration" placeholder="Концентрація, %">
+				</form>
+   					<p><input type="button" value="Розрахувати" onclick="countButton()"></p>
+   					<p><strong>Результат:</strong></p>
+   					<p id="glueResult">Додай клею: </p>
+   					<p id="waterResult">Додай води: </p>
+   			</div>
+   			<br>
+   			<div><p> <strong>Варіант 2. (Якщо залишилось трохи попереднього розчину)</strong></p>
+   				<form action="">
+   					<label>Скільки розчину залишилося?</label>
+					<input type="number" name="solventLeft" id = "solventLeft" placeholder="Розчин, л">
+					<br>
+					<label>Яка концентрація розчину, що залишився?</label>
+					<input type="number" name="concentrationLeft" id = "concentrationLeft" placeholder="Концентрація, %">
+					<br>
+   					<label>Скільки потрібно нового розчину?</label>
+					<input type="number" name="solventNew" id = "solventNew" placeholder="Розчин, л">
+					<br>
+					<label>Яка концентрація нового розчину?</label>
+					<input type="number" name="concentrationNew" id = "concentrationNew" placeholder="Концентрація, %">
+   				</form>
+   				  	<p><input type="button" value="Розрахувати" onclick="countButtonNew()"></p>
+   					<p><strong>Результат:</strong></p>
+   					<p id="glueResultAdd">Додай клею: </p>
+   					<p id="waterResultAdd">Додай води: </p>
+   			</div>
+		</div>
+</div>
+</body>
+</html>
