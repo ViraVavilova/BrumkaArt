@@ -25,3 +25,6 @@ function countButtonNew() {
 	var waterResultAdd = document.getElementById("waterResultAdd");
 	waterResultAdd.innerHTML = "Додай води: " + waterAdd + "л";
 }
+
+    
+

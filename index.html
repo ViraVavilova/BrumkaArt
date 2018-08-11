@@ -3,54 +3,68 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>BrumkaArt</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src ="js.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media = "screen and (min-width: 850px)" href="css/big.css">
+	<script type="text/javascript" src ="script/js.js"></script>
 </head>
 <body>
-	<div class="box">
-	<!--HEADER-->
+	<div class="container">
 		<div class="header">
 			<div class="image">
 				<img src="images/logo.jpg">
 			</div>
-			<h1>BrumkaArt</h1>
+			<div class = "logo">
+				<h1>BrumkaArt</h1>
+			</div>
 		</div>
-	<!--MAIN-->
 		<div class="main">
-			<div><p> <strong>Варіант 1. </strong></p>
+			<div class="first-option">
+				<p><strong>Варіант 1. </strong></p>
 				<form action="">
 					<label>Скільки розчину потрібно?</label>
+					<br class="br-mob-only" />
 					<input type="number" name="solvent" id = "solvent" placeholder="Розчин, л">
 					<br>
 					<label>Яка концентрація розчину?</label>
+					<br class="br-mob-only" />
 					<input type="number" name="concentration" id = "concentration" placeholder="Концентрація, %">
-				</form>
-   					<p><input type="button" value="Розрахувати" onclick="countButton()"></p>
+					<br />
+   					<input type="button" value="Розрахувати" onclick="countButton()">
    					<p><strong>Результат:</strong></p>
    					<p id="glueResult">Додай клею: </p>
    					<p id="waterResult">Додай води: </p>
+   					<input type="reset" value="Очистити">
+   				</form>
+
    			</div>
-   			<br>
-   			<div><p> <strong>Варіант 2. (Якщо залишилось трохи попереднього розчину)</strong></p>
+   			<div class="second-option">
+   				<p> <strong>Варіант 2. (Якщо залишилось трохи попереднього розчину)</strong></p>
    				<form action="">
    					<label>Скільки розчину залишилося?</label>
+   					<br class="br-mob-only" />
 					<input type="number" name="solventLeft" id = "solventLeft" placeholder="Розчин, л">
 					<br>
 					<label>Яка концентрація розчину, що залишився?</label>
+					<br class="br-mob-only" />
 					<input type="number" name="concentrationLeft" id = "concentrationLeft" placeholder="Концентрація, %">
 					<br>
    					<label>Скільки потрібно нового розчину?</label>
+   					<br class="br-mob-only" />
 					<input type="number" name="solventNew" id = "solventNew" placeholder="Розчин, л">
 					<br>
 					<label>Яка концентрація нового розчину?</label>
+					<br class="br-mob-only" />
 					<input type="number" name="concentrationNew" id = "concentrationNew" placeholder="Концентрація, %">
-   				</form>
-   				  	<p><input type="button" value="Розрахувати" onclick="countButtonNew()"></p>
-   					<p><strong>Результат:</strong></p>
+   					<br />
+   				  	<input type="button" value="Розрахувати" onclick="countButtonNew()">
+   				  	<p><strong>Результат:</strong></p>
    					<p id="glueResultAdd">Додай клею: </p>
    					<p id="waterResultAdd">Додай води: </p>
+   					<input type="reset" value="Очистити">
+   				</form>
    			</div>
 		</div>
-</div>
+	</div>
+
 </body>
 </html>
