@@ -1,70 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8"/>
-	<title>BrumkaArt</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" media = "screen and (min-width: 850px)" href="css/big.css">
-	<script type="text/javascript" src ="script/js.js"></script>
-</head>
-<body>
-	<div class="container">
-		<div class="header">
-			<div class="image">
-				<img src="images/logo.jpg">
-			</div>
-			<div class = "logo">
-				<h1>BrumkaArt</h1>
-			</div>
-		</div>
-		<div class="main">
-			<div class="first-option">
-				<p><strong>Варіант 1. </strong></p>
-				<form action="">
-					<label>Скільки розчину потрібно?</label>
-					<br class="br-mob-only" />
-					<input type="number" name="solvent" id = "solvent" placeholder="Розчин, л">
-					<br>
-					<label>Яка концентрація розчину?</label>
-					<br class="br-mob-only" />
-					<input type="number" name="concentration" id = "concentration" placeholder="Концентрація, %">
-					<br />
-   					<input type="button" value="Розрахувати" onclick="countButton()">
-   					<p><strong>Результат:</strong></p>
-   					<p id="glueResult">Додай клею: </p>
-   					<p id="waterResult">Додай води: </p>
-   					<input type="reset" value="Очистити">
-   				</form>
-
-   			</div>
-   			<div class="second-option">
-   				<p> <strong>Варіант 2. (Якщо залишилось трохи попереднього розчину)</strong></p>
-   				<form action="">
-   					<label>Скільки розчину залишилося?</label>
-   					<br class="br-mob-only" />
-					<input type="number" name="solventLeft" id = "solventLeft" placeholder="Розчин, л">
-					<br>
-					<label>Яка концентрація розчину, що залишився?</label>
-					<br class="br-mob-only" />
-					<input type="number" name="concentrationLeft" id = "concentrationLeft" placeholder="Концентрація, %">
-					<br>
-   					<label>Скільки потрібно нового розчину?</label>
-   					<br class="br-mob-only" />
-					<input type="number" name="solventNew" id = "solventNew" placeholder="Розчин, л">
-					<br>
-					<label>Яка концентрація нового розчину?</label>
-					<br class="br-mob-only" />
-					<input type="number" name="concentrationNew" id = "concentrationNew" placeholder="Концентрація, %">
-   					<br />
-   				  	<input type="button" value="Розрахувати" onclick="countButtonNew()">
-   				  	<p><strong>Результат:</strong></p>
-   					<p id="glueResultAdd">Додай клею: </p>
-   					<p id="waterResultAdd">Додай води: </p>
-   					<input type="reset" value="Очистити">
-   				</form>
-   			</div>
-		</div>
-	</div>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Post Trucks</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <div id="app">
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
 </html>
